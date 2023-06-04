@@ -2,6 +2,13 @@
 Master Thesis
 ## Camera installation
 follow the instruction,see [Here](https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md).
+### On-Chip Calibration
+Slef-calibration process, reconmmand using Intel Realsense-viewer
+1. Install Intelrealsense-Viewer Linux version from [Here](https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md).
+2. Open Realsense-Viewer using command `realsense-viewer`
+3. Stop all streaming
+4. Click #MORE# and choose #On-Chip-Calibration
+5. Export calibration data
 ### Issues u might occour
 - No frames received from camera
   If u use usb 2.0 port, sometimes the power supply of realsense camera is not sufficient.
