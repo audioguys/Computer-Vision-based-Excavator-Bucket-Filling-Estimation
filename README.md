@@ -1,6 +1,6 @@
 # Computer-Vision-based-Excavator-Bucket-Filling-Estimation
 Master Thesis
-## Camera installation
+## Camera Set-up
 follow the instruction,see [Here](https://github.com/IntelRealSense/librealsense/blob/master/doc/installation.md).
 
 ### Issues u might occour
@@ -19,6 +19,18 @@ Self-calibration process, reconmmand using Intel Realsense-viewer
 3. Stop all streaming
 4. Click *More* and choose *On-Chip-Calibration*
 5. Export calibration data
+#### Dynamic Calibration
+Dynamic calibration process, get the extrinct parameter, reconmmand using Intel dynamic calibrator
+1. Install the latest version from [here](https://www.intel.com/content/www/us/en/download/645988/intel-realsense-d400-series-dynamic-calibration-tool.html).
+2. Print out the chess board image
+3. Open dynamic calibration tool, removing chess board image following the instruction
+4. Export parameter in *json* file
+
+## Camera installation
+
+
+
+
 
   
 
