@@ -26,9 +26,21 @@ Dynamic calibration process, get the extrinct parameter, reconmmand using Intel 
 3. Open dynamic calibration tool, removing chess board image following the instruction
 4. Export parameter in *json* file
 
-## Camera installation
+### Camera installation
 
 
+## Creat a dataset
+The consist of dataset
+1. RGB image
+2. Depth image
+3. Dpeth information in csv 
+4. Ground truth
+### Record a rosbag
+There are two methods to record a rosbag
+1. Using Realsense-viewer (Recommand)
+2. Using Ros wrapper
+### Convert rosbag into images and csv file
+Using image_converter.py to extract data from rosbag
 
 
 
