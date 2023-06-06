@@ -9,7 +9,7 @@ pipeline = rs.pipeline()
 
 #Create a config并配置要流​​式传输的管道
 config = rs.config()
-config.enable_device_from_file("/home/pang/Documents/20230604_202100.bag")#这是打开相机API录制的视频
+config.enable_device_from_file("/home/lain/Documents/20230606_105424.bag")#这是打开相机API录制的视频
 # config.enable_stream(rs.stream.depth, 640, 480, rs.format.z16, 30)
 # config.enable_stream(rs.stream.color, 640, 480, rs.format.bgr8, 30)
 
@@ -23,15 +23,15 @@ align_to = rs.stream.color
 align = rs.align(align_to)
 
 # 保存路径
-save_path = '/home/pang/Camera/realsense_data'
+save_path = '/home/lain/Documents/realsense_data'
 
 # 保存的图片和实时的图片界面
 # cv2.namedWindow("live", cv2.WINDOW_AUTOSIZE)
 # cv2.namedWindow("save", cv2.WINDOW_AUTOSIZE)
 number = 0
 
-file_handle1 = open('/home/pang/Camera/realsense_data/rgb.txt', 'w')
-file_handle2 = open('/home/pang/Camera/realsense_data/depth.txt', 'w')
+file_handle1 = open('/home/lain/Documents/realsense_data/rgb.txt', 'w')
+file_handle2 = open('/home/lain/Documents/realsense_data/depth.txt', 'w')
 
 # 主循环
 try:
@@ -74,7 +74,7 @@ try:
         #cv2.imshow("save", np.hstack((saved_color_image, saved_depth_mapped_image)))
 
         #查看话题包有多少帧图片，下面就改成多少
-        if number == 768:
+        if number == 776:
             cv2.destroyAllWindows()
             break    
 finally:
